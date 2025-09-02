@@ -47,17 +47,18 @@ print('The sum of numbers from 1 to 50 is:',sum)
 # Task 1:
 #calculate factorial using function
 
-
 def fact(x):
-    f=1
-    for i in range(1,x+1):
-        f=f*i
-    return f
+    if (x<1):
+        print("incorrect input")
+    else:
+        f=1
+        for i in range(1,x+1):
+            f=f*i
+        return f
 
 a=int(input('Enter the number to find factorial:'))
 result=fact(a)
 print(result)
-
 
 # Task 2:
 
